@@ -2,11 +2,22 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
-        
+        <nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"><img src="Logo(Standalone).PNG"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		</nav>
         <div id="app">
-            {{ message }}
+			<span v-html="message" v-if="hash==''"></span></span>
         </div>
         
         <script src="index.js"></script>

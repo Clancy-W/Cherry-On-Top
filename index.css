@@ -1,4 +1,12 @@
-html, body {
-    margin: 5px;
-    padding: 0;
+h1 {
+	text-align: center;
+}
+
+.brand-logo > img {
+	height: 64px;
+}
+
+p { 
+	margin-left: 20%;
+	margin-right: 20%;
 }
