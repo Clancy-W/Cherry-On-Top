@@ -11,6 +11,6 @@ var app = new Vue({
 				<ul><li>Chocolate</li><li>Cookies and Cream</li><li>Mint Choc</li><li>Golden Gaytime</li><li>Mango</li><li>Licquorice</li></ul>`,
 		shop: `<h1>Shop</h1>
 				<p>This is the shop, where you can make and buy items.</p>`,
-		hash: window.location.hash
+		counter: 0
     }
 });
