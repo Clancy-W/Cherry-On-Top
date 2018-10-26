@@ -6,7 +6,7 @@ h1 {
 	height: 64px;
 }
 
-p { 
+p, ul, ol { 
 	margin-left: 20%;
 	margin-right: 20%;
 }

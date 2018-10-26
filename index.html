@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="index.css">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="favicon" href="Logo(Standalone).PNG">
     </head>
     <body>
         <nav>
@@ -13,11 +14,16 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#menu">Menu</a></li>
 				<li><a href="#contact">Contact</a></li>
+				<li><a class="waves-effect waves-light btn" href="#shop">SHOP</a></li>
 			</ul>
 		</div>
 		</nav>
         <div id="app">
-			<span v-html="message" v-if="hash==''"></span></span>
+			<span v-html="message" v-if="hash==''"></span>
+			<span v-html="menu" v-if="hash=='#menu'"></span>
+			<span v-html="about" v-if="hash=='#about'"></span>
+			<span v-html="contact" v-if="hash=='#contact'"></span>
+			<span v-html="shop" v-if="hash=='#shop'"></span>
         </div>
         
         <script src="index.js"></script>
