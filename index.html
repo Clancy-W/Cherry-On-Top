@@ -1,31 +1,60 @@
+<!doctype html>
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<link rel="favicon" href="Logo(Standalone).PNG">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		
     </head>
     <body>
-        <nav>
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo"><img src="Logo(Standalone).PNG"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a v-on:click="counter = 0">Home</a></li>
-				<li><a v-on:click="counter = 1">About</a></li>
-				<li><a v-on:click="counter = 2">Menu</a></li>
-				<li><a v-on:click="counter = 3">Contact</a></li>
-				<li><a class="waves-effect waves-light btn" v-on:click="counter = 4">SHOP</a></li>
-			</ul>
-		</div>
-		</nav>
+		
         <div id="app">
+			<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo"><img src="Logo(Standalone).PNG"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a v-on:click="counter = 0">Home</a></li>
+					<li><a v-on:click="counter = 1">About</a></li>
+					<li><a v-on:click="counter = 2">Menu</a></li>
+					<li><a v-on:click="counter = 3">Contact</a></li>
+					<li><a class="waves-effect waves-light btn" v-on:click="counter = 4">SHOP <i class="material-icons">shopping_cart</i></a></li>
+				</ul>
+			</div>
+			</nav>
 			<span v-html="message" v-if="counter==0"></span>
 			<span v-html="menu" v-if="counter==1"></span>
 			<span v-html="about" v-if="counter==2"></span>
 			<span v-html="contact" v-if="counter==3"></span>
 			<span v-html="shop" v-if="counter==4"></span>
+			<footer class="page-footer">
+			  <div class="container">
+				<div class="row">
+				  <div class="col l6 s12">
+					<h5 class="white-text">Contact Us</h5>
+					<p class="grey-text text-lighten-4">If you need any information email us at <a>support@cherryontop.com.au</a> or find us on social media.</p>
+				  </div>
+				  <div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul class="footerlist">
+						<li><a v-on:click="counter = 0">Home</a></li>
+						<li><a v-on:click="counter = 1">About</a></li>
+						<li><a v-on:click="counter = 2">Menu</a></li>
+						<li><a v-on:click="counter = 4">Shop</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			  <div class="footer-copyright">
+				<div class="container">
+				© 2018 Cherry on Top Ice Cream Shop
+				<a class="text-lighten-4 right" href="#!">Contact Us</a>
+				</div>
+			  </div>
+			</footer>
         </div>
-        
         <script src="index.js"></script>
     </body>
 </html>

@@ -5,6 +5,16 @@ var app = new Vue({
 			<h1>Cherry on Top</h1>
 			<h1>Ice Cream Shop</h1>
 			<p>Cherry on Top Ice Cream Shop is a startup ice cream business which delivers ice cream to your door. We offer ice cream designed by you, made by us. To find our menu, go to the <a href="#menu">Menu Page</a>, which has our full list of ingredients for you to order, for more information about us, go to the <a href="#about">About Page</a>, and to find out how to contact us go to the <a href="#contact">Contact Page</a></p>
+			<div class="full-icecream"><div class="container">
+				<div class="row">
+				  <div class="col l6 s12">
+					<h2>We deliver fresh ice cream to your door.</h2>
+				  </div>
+				</div>
+				<div class="row">
+
+				</div>
+			  </div></div>
 			`,
 		menu: `<h1>Menu</h1>
 				<p>At <em>Cherry on Top Ice Cream</em>, we pride ourselves on our variance of flavours suited for everyones' tastebuds. We offer many different types of ice cream and sorbets, you can also mix in your own items, like chocolate. Here is a list of some of our flavours.

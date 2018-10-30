@@ -10,3 +10,14 @@ p, ul, ol {
 	margin-left: 20%;
 	margin-right: 20%;
 }
+
+.footerlist {
+	line-height: 150%;
+}
+
+.full-icecream {
+	height:50vh;
+	background-image: url('./icecream.jpg');
+	background-position: center;
+	background-size: cover;
+}
