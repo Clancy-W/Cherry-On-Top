@@ -5,11 +5,10 @@ h1 {
 .brand-logo > img {
 	height: 64px;
 }
-
-p, ul, ol { 
-	margin-left: 20%;
-	margin-right: 20%;
+.nomargin {
+	margin: 0;
 }
+
 
 .footerlist {
 	line-height: 150%;
