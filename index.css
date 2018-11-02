@@ -14,6 +14,23 @@ h1 {
 	line-height: 150%;
 }
 
+a {
+	color: #1de9b6 !important;
+}
+
+a:hover {
+	color: #00bfa5 !important;
+	cursor:pointer !important;
+}
+
+.card a {
+	color: #ffab40 !important;
+}
+
+a > i {
+	color: white !important;
+}
+
 .full-icecream {
 	height:50vh;
 	background-image: url('./icecream.jpg');
