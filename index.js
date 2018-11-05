@@ -25,7 +25,7 @@ var app = new Vue({
 			<div class="container"><h3 align="center">Find us on our social media platforms</h3><p>Our business sees the future is completely online, so we promote having no store front, and going fully online. Do you really want to leave the house to get ice cream? You do it with pizza, its about time you did it with ice cream. You can also find us on many different sites, so you can get updated easily.</p>
 			<div class="row">
 					<div class="col s12 m6 l3" align="center">
-						<div class="card hoverable">
+						<div class="card hoverable small">
 							<div class="card-content">
 							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/155/facebook-512.png" style="width:50%">
 							  <span class="card-title">Facebook</span>
@@ -37,7 +37,7 @@ var app = new Vue({
 						</div>
 					</div>
 					<div class="col s12 m6 l3 full" align="center">
-						<div class="card hoverable">
+						<div class="card hoverable small">
 							<div class="card-content">
 							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/158/twitter-512.png" style="width:50%">
 							  <span class="card-title">Twitter</span>
@@ -49,7 +49,7 @@ var app = new Vue({
 						</div>
 					</div>
 					<div class="col s12 m6 l3" align="center">
-						<div class="card hoverable">
+						<div class="card hoverable small">
 							<div class="card-content">
 							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/157/youtube_2-512.png" style="width:50%">
 							  <span class="card-title">YouTube</span>
@@ -61,7 +61,7 @@ var app = new Vue({
 						</div>
 					</div>
 					<div class="col s12 m6 l3" align="center">
-						<div class="card hoverable">
+						<div class="card hoverable small">
 							<div class="card-content">
 							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/155/instagram-512.png" style="width:50%">
 							  <span class="card-title">Instagram</span>
