@@ -14,21 +14,142 @@
         <div id="app">
 			<nav>
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo"><img src="Logo(Standalone).PNG"></a>
+				<a v-on:click="counter = 0" href="#" class="brand-logo"><img src="Logo(Standalone).PNG"></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a v-on:click="counter = 0">Home</a></li>
-					<li><a v-on:click="counter = 1">About</a></li>
 					<li><a v-on:click="counter = 2">Menu</a></li>
 					<li><a v-on:click="counter = 3">Contact</a></li>
 					<li><a class="waves-effect waves-light btn pulse teal accent-3" v-on:click="counter = 4"><i class="material-icons">shopping_cart</i></a></li>
 				</ul>
 			</div>
 			</nav>
-			<span v-html="message" v-if="counter==0"></span>
-			<span v-html="menu" v-if="counter==1"></span>
-			<span v-html="about" v-if="counter==2"></span>
-			<span v-html="contact" v-if="counter==3"></span>
-			<span v-html="shop" v-if="counter==4"></span>
+			<span v-if="counter==0"><h1>Cherry on Top</h1>
+			<h1>Ice Cream Shop</h1>
+			<div class="container"><p>Cherry on Top Ice Cream Shop is a startup ice cream business which delivers ice cream to your door. We offer ice cream designed by you, made by us. To find our menu, go to the <a v-on:click="counter = 2" href="#">Menu Page</a>, which has our full list of ingredients for you to order, for more information about us, and to find out how to contact us go to the <a v-on:click="counter = 3" href="#">Contact Page</a></p></div>
+			<div class="full-icecream" style="display:flex;align-items:center;"><div class="container">
+				<div class="row">
+					<div class="col s12 m6">
+					  <div class="card z-depth-1 hoverable">
+						<div class="card-content">
+						  <span class="card-title">We deliver fresh ice cream to your door.</span>
+						  <p>We pride ourselves on our delivery of fresh, cold ice cream of your choice. We offer delivery all over the country and will make sure you get the ice cream you ordered, fresh and fast. We asure you will get quality icecream for your money, not melted, bad icecream. Go to the store to start creating your dream ice cream today!</p>
+						</div>
+						<div class="card-action">
+						  <a v-on:click="counter = 4" href="#">Go to the Store</a>
+						</div>
+					  </div>
+				</div>
+				
+				</div>
+			  </div></div>
+			<h1>Social Media</h1>
+			<div class="container"><h3 align="center">Find us on our social media platforms</h3><p>Our business sees the future is completely online, so we promote having no store front, and going fully online. Do you really want to leave the house to get ice cream? You do it with pizza, its about time you did it with ice cream. You can also find us on many different sites, so you can get updated easily.</p>
+			<div class="row">
+					<div class="col s12 m6 l3" align="center">
+						<div class="card medium hoverable">
+							<div class="card-content">
+							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/155/facebook-512.png" style="width:50%">
+							  <span class="card-title">Facebook</span>
+							  <p>Facebook is an easy way for you to reach out and contact us.</p>
+							</div>
+<div class="card-action">
+          <a href="http://www.facebook.com">Take me there!</a>
+        </div>
+						</div>
+					</div>
+					<div class="col s12 m6 l3 full" align="center">
+						<div class="card medium hoverable">
+							<div class="card-content">
+							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/158/twitter-512.png" style="width:50%">
+							  <span class="card-title">Twitter</span>
+							  <p>On Twitter we will retweet images that you guys send to us and announce stuff.</p>
+							</div>
+<div class="card-action">
+          <a href="http://www.twitter.com">Take me there!</a>
+        </div>
+						</div>
+					</div>
+					<div class="col s12 m6 l3" align="center">
+						<div class="card medium hoverable">
+							<div class="card-content">
+							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/157/youtube_2-512.png" style="width:50%">
+							  <span class="card-title">YouTube</span>
+							  <p>On our YouTube page you will be able to peek at new flavours, cones and more!</p>
+							</div>
+<div class="card-action">
+          <a href="http://www.youtube.com">Take me there!</a>
+        </div>
+						</div>
+					</div>
+					<div class="col s12 m6 l3" align="center">
+						<div class="card medium hoverable">
+							<div class="card-content">
+							  <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-17/155/instagram-512.png" style="width:50%">
+							  <span class="card-title">Instagram</span>
+							  <p>On Instagram we will share promotional photos and you can reach out to us.</p>
+							</div>
+<div class="card-action">
+          <a href="http://www.instagram.com">Take me there!</a>
+        </div>
+						</div>
+					</div>
+				</div></div>
+				<div class="container"><div class="section"><div class="row"><div class="col s12 l6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://sg-fs.com/wp-content/uploads/2017/08/user-placeholder.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                Cherry on Top has offered many unique ways for me to get my very own, personalised ice cream.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div><div class="col s12 l6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s10">
+              <span class="black-text">
+                Cherry on Top Ice Cream has so many unique flavours, and has so many options for mixins.
+              </span>
+            </div>
+            <div class="col s2">
+              <img src="http://sg-fs.com/wp-content/uploads/2017/08/user-placeholder.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+          </div>
+        </div>
+      </div><div class="col s12 l6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://sg-fs.com/wp-content/uploads/2017/08/user-placeholder.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                Cherry on Top let me get my own ice cream from the comfort of my own home, saving my time, and giving me something tasty!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div><div class="col s12 l6">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s10">
+              <span class="black-text">
+                Cherry on Top Ice Cream has been the most reliable delivery service for ice cream, with the food coming cold and unmelted.
+              </span>
+            </div>
+            <div class="col s2">
+              <img src="http://sg-fs.com/wp-content/uploads/2017/08/user-placeholder.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+          </div>
+        </div>
+      </div></div></div></div></span>
+			<span v-if="counter==2"><h1>Menu</h1><div class="container"><p>There are many items in our catalogue, below you will find some of the newest and best of our flavours</p><div class="row"><div class="col s3"><div class="card hoverable"><div class="card-content"><img style="width:50%" src="http://fugodesserts.com/wp-content/uploads/2017/11/Ice-Cream-icon-300x300.png"><span class="card-title">Chocolate</span></div></div></div></div></div></span>
+			<span v-if="counter==3"><h1>Contact Us</h1></span>
+			<span v-if="counter==4"><h1>Shop</h1></span>
 			<footer class="page-footer">
 			  <div class="container">
 				<div class="row">
@@ -40,8 +161,6 @@
 					<h5 class="white-text">Links</h5>
 					<ul class="footerlist">
 						<li><a v-on:click="counter = 0">Home</a></li>
-						<li><a v-on:click="counter = 1">About</a></li>
-						<li><a v-on:click="counter = 1">About</a></li>
 						<li><a v-on:click="counter = 2">Menu</a></li>
 						<li><a v-on:click="counter = 4">Shop</a></li>
 					</ul>
@@ -51,7 +170,7 @@
 			  <div class="footer-copyright">
 				<div class="container">
 				© 2018 Cherry on Top Ice Cream Shop
-				<a class="text-lighten-4 right" href="#!">Contact Us</a>
+				<a class="text-lighten-4 right" v-on:click="counter = 3" href="#">Contact Us</a>
 				</div>
 			  </div>
 			</footer>
